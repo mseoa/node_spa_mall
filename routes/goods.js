@@ -101,6 +101,7 @@ router.delete("/goods/:goodsId/cart", async(req,res)=>{
   res.json({result:"success"});
 })
 
+
 const Goods = require("../schemas/goods.js")
 router.post("/goods", async (req,res)=>{ //데이터가 존재하니 데이터가 반환됐어~ 이런식으로 동기적으로 처리돼야함
   const {goodsId, name, thumbnailUrl, category, price} = req.body;

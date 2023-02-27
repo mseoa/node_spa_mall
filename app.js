@@ -15,6 +15,8 @@ app.post("/",(req,res)=>{
     res.send('기본 URI에 POST 메소드가 정상적으로 실행되었습니다.')
 })
 
+
+
 app.get("/",(req,res)=>{
     console.log(req.query)
 
